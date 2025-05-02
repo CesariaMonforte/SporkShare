@@ -37,7 +37,6 @@ html {
     margin: 0 auto;
     padding: 0 var(--space-large);
     overflow: hidden;
-    padding-bottom: var(--space-large);
 }
 
 .two-column {
@@ -67,24 +66,59 @@ html {
     align-items: center;
 }
 
-/* ----- BUTTON ----- */
-
-.button {
-    background-color: var(--green-secondary);
-    font-family: var(--font-family);
-    font-size: var(--space-regular);
-    font-weight: var(--font-style-bold);
-    padding: var(--space-regular) var(--space-large);
-    border: none;
-    border-radius: var(--space-small);
-    cursor: pointer;
-    height: var(--space-large);
-    width: 210px;
+.header-xxlarge {
+    color: var(--black);
+    font-size: var(--header-xxlarge-size);
+    font-weight: var(--font-weight-700);
+    line-height: var(--line-height-xxlarge);
+    margin-bottom: var(--space-medium);
 }
 
-.button:hover {
+.title-section {
+    color: var(--black);
+    font-size: var(--title-section-font-size);
+    font-weight: var(--font-weight-700);
+    line-height: var(--line-height-large);
+    margin-bottom: var(--space-regular);
+    text-decoration: none;
+}
+
+.body-text {
+    color: var(--black);
+    font-size: var(--body-text-font-size);
+    font-weight: var(--font-weight-400);
+    line-height: var(--line-height-medium);
+    margin-top: 0;
+}
+
+.menu-text {
+    color: var(--white);
+    font-size: var(--menu-font-size);
+    font-weight: var(--font-weight-400);
+    line-height: var(--line-height-small);
+    text-decoration: none;
+}
+
+.menu-text-hover {
+    font-weight: var(--menu-text-hover-font-weight);
+}
+
+.label {
+    color: var(--black);
+    font-size: var(--label-font-size);
+    font-weight: var(--font-weight-400);
+    line-height: var(--line-height-small);
+}
+
+.button {
+    color: var(--white);
+    text-align: center;
+    font-size: var(--button-font-size);
+    font-weight: var(--font-weight-600);
+    line-height: var(--line-height-medium);
+    text-decoration: none;
+    padding: var(--space-regular);
     background-color: var(--green-primary);
-    color: var(--green-secondary);
 }
 
 /* ----- NAV BAR ----- */
@@ -101,13 +135,6 @@ html {
     left: 0;
     right: 0;
     z-index: 1000;
-    display: flex;
-    align-items: center;
-    gap: var(--space-large);
-    color: var(--white);
-    font-size: var(--font-small);
-    font-weight: var(--font-style-normal);
-    text-decoration: none;
 }
 
 .menu {
@@ -116,39 +143,48 @@ html {
     gap: var(--space-large);
 }
 
-.menu-text {
-    color: var(--white);
-    font-size: var(--font-small);
-    font-weight: var(--font-style-normal);
-    text-decoration: none;
+/* ----- BUTTONS ----- */
+.button-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-large);
+    width: 100%;
+    box-sizing: border-box;
+    margin: var(--space-large) auto;
+    padding: 0 var(--space-large);
+    overflow: hidden;
+    max-width: 1512px;
 }
 
-.menu-text:hover {
-    font-weight: var(--font-style-bold);
-    color: var(--green-secondary);
-}
-
-/* ----- HEADER ----- */
-.header-content {
+.button-content {
     display: flex;
-    flex-direction: column;
-    gap: var(--space-regular);
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-medium);
+    background-color: var(--green-primary);
+    border: none;
+    box-sizing: border-box;
+    margin: 0;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    border-radius: 8px;
+    height: var(--space-large);
+    flex: 1 1 calc(50% - 24px);
 }
 
-.title {
-    font-family: var(--font-family);
-    font-size: var(--font-xxlarge);
-    color: var(--black);
-    margin: 0;
-    padding: 0;
+.button-content:hover {
+    background-color: var(--green-900);
+    transform: scale(1.1);
 }
 
-.body {
-    font-family: var(--font-family);
-    font-size: var(--font-regular);
-    color: var(--black);
-    margin: 0;
-    padding: 0;
+.button-content img {
+    width: 20px;
+    height: 20px;
+}
+
+.button-content p {
+    color: var(--white);
+    font-size: var(--menu-font-size);
 }
 
 /* ----- FOOTER ----- */
@@ -190,15 +226,17 @@ html {
 
     /* ----- TYPE ----- */
     --font-family: "Roboto", sans-serif;
-    --font-xxlarge: 88px;
-    --font-large: 30px;
-    --font-medium: 24px;
-    --font-regular: 20px;
-    --font-small: 16px;
-
+    --header-xxlarge-size: 88px;
+    --title-section-font-size: 30px;
+    --button-font-size: 24px;
+    --body-text-font-size: 20px;
+    --menu-font-size: 16px;
+    --label-font-size: 16px;
     --font-style-normal: normal;
-    --font-style-bold: bold;
-
+    --font-weight-700: 700;
+    --font-weight-600: 600;
+    --font-weight-400: 400;
+    --menu-text-hover-font-weight: 700;
     --line-height-xxlarge: 100px;
     --line-height-large: 36px;
     --line-height-medium: 28px;

@@ -37,7 +37,6 @@ html {
     margin: 0 auto;
     padding: 0 var(--space-large);
     overflow: hidden;
-    padding-bottom: var(--space-large);
 }
 
 .two-column {
@@ -65,26 +64,6 @@ html {
     grid-template-columns: auto 1fr;
     gap: var(--space-large);
     align-items: center;
-}
-
-/* ----- BUTTON ----- */
-
-.button {
-    background-color: var(--green-secondary);
-    font-family: var(--font-family);
-    font-size: var(--space-regular);
-    font-weight: var(--font-style-bold);
-    padding: var(--space-regular) var(--space-large);
-    border: none;
-    border-radius: var(--space-small);
-    cursor: pointer;
-    height: var(--space-large);
-    width: 210px;
-}
-
-.button:hover {
-    background-color: var(--green-primary);
-    color: var(--green-secondary);
 }
 
 /* ----- NAV BAR ----- */
@@ -123,34 +102,23 @@ html {
     text-decoration: none;
 }
 
-.menu-text:hover {
+.menu-text-hover {
     font-weight: var(--font-style-bold);
     color: var(--green-secondary);
 }
 
-/* ----- HEADER ----- */
-.header-content {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-regular);
-}
+/* ----- BUTTONS ----- */
 
-.title {
-    font-family: var(--font-family);
-    font-size: var(--font-xxlarge);
-    color: var(--black);
-    margin: 0;
-    padding: 0;
+.button {
+    background-color: var(--green-secondary);
+    font-weight: bold;
+    padding: 16px 48px;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: sans-serif;
 }
-
-.body {
-    font-family: var(--font-family);
-    font-size: var(--font-regular);
-    color: var(--black);
-    margin: 0;
-    padding: 0;
-}
-
 /* ----- FOOTER ----- */
 .footer {
     display: flex;

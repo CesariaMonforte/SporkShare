@@ -79,7 +79,6 @@ html {
     border-radius: var(--space-small);
     cursor: pointer;
     height: var(--space-large);
-    width: 210px;
 }
 
 .button:hover {
@@ -126,29 +125,6 @@ html {
 .menu-text:hover {
     font-weight: var(--font-style-bold);
     color: var(--green-secondary);
-}
-
-/* ----- HEADER ----- */
-.header-content {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-regular);
-}
-
-.title {
-    font-family: var(--font-family);
-    font-size: var(--font-xxlarge);
-    color: var(--black);
-    margin: 0;
-    padding: 0;
-}
-
-.body {
-    font-family: var(--font-family);
-    font-size: var(--font-regular);
-    color: var(--black);
-    margin: 0;
-    padding: 0;
 }
 
 /* ----- FOOTER ----- */
