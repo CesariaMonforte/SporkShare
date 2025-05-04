@@ -155,26 +155,11 @@ html {
 .footer {
     display: flex;
     width: 100%;
-    height: 400px;
+    height: 80px;
     padding: 0 var(--space-large);
-    flex-direction: column;
     justify-content: space-between;
-    align-items: flex-start;
-
-    background-color: var(--green-900);
-}
-
-.footer .two-column {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
     align-items: center;
-}
-
-.footer-text {
-    color: var(--white);
-    text-align: right;
-    margin-left: auto;
+    background-color: var(--green-900);
 }
 
 /* ------------------------------------------------------ VARIABLES ------------------------------------------------------ */
