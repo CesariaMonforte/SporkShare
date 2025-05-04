@@ -161,7 +161,6 @@ html {
 }
 
 /* ----- ABOUT US ----- */
-
 .info_box {
     text-align: center;
 }
@@ -176,11 +175,12 @@ html {
 .features_sub,
 .team,
 .contact_us {
-    padding: 0 var(--space-large);
+    padding: var(--space-large);
 }
 
 /* ----- TEAM ----- */
 .team {
+    padding-top: var(--space-large);
     background-color: var(--white);
 }
 
@@ -188,6 +188,7 @@ html {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 16px;
+    margin: 0 auto;
     justify-content: center; /* Center the grid itself if not full width */
     justify-items: center; /* Center items horizontally in each cell */
     align-items: center;
@@ -213,10 +214,10 @@ html {
     width: 684px;
     height: 604px;
 }
-.logo_vertical_img {
+logo_vertical_img {
     width: 486px;
     height: 311px;
-    margin: 0 auto;
+    padding: 0 auto;
 }
 
 /* ----- FOOTER ----- */

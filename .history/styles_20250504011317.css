@@ -188,6 +188,7 @@ html {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 16px;
+
     justify-content: center; /* Center the grid itself if not full width */
     justify-items: center; /* Center items horizontally in each cell */
     align-items: center;

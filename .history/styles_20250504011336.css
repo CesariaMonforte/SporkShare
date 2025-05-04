@@ -198,7 +198,6 @@ html {
     background-color: var(--green-200);
     display: flex;
     justify-content: center;
-    padding: var(--space-medium);
 }
 .team_item_img {
     width: 390px;

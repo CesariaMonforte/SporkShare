@@ -176,7 +176,7 @@ html {
 .features_sub,
 .team,
 .contact_us {
-    padding: 0 var(--space-large);
+    /* padding: 0 var(--space-large); */
 }
 
 /* ----- TEAM ----- */

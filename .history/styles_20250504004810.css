@@ -49,7 +49,7 @@ html {
 .three-column {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: var(--space-large);
+    gap: auto;
     padding: var(--space-large);
 }
 
@@ -66,11 +66,6 @@ html {
     grid-template-columns: auto 1fr;
     gap: var(--space-large);
     align-items: center;
-}
-
-.screen_mockup_img {
-    width: 677;
-    height: 821px;
 }
 
 /* ----- BUTTON ----- */
@@ -156,41 +151,30 @@ html {
     margin: 0;
     padding: 0;
 }
-.info_box_left {
-    text-align: left;
-}
 
 /* ----- ABOUT US ----- */
-
 .info_box {
     text-align: center;
-}
-.promotional_video {
-    width: 1440px;
-    height: 800px;
 }
 /* ----- FEATURES ----- */
 .features {
     background-color: var(--orange-50);
 }
-.features_sub,
-.team,
-.contact_us {
-    padding: 0 var(--space-large);
-}
 
 /* ----- TEAM ----- */
 .team {
+    padding-top: var(--space-large);
     background-color: var(--white);
 }
 
 .team_list {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 16px;
-    justify-content: center; /* Center the grid itself if not full width */
-    justify-items: center; /* Center items horizontally in each cell */
-    align-items: center;
+    margin: 0 auto; /* This centers the grid container */
+
+    max-width: 1400px;
+    justify-content: center;
 }
 .team_item_background {
     width: 440px;
@@ -200,23 +184,13 @@ html {
     justify-content: center;
     padding: var(--space-medium);
 }
-.team_item_img {
+.feature_item_img {
     width: 390px;
     height: 369px;
 }
 /* ----- CONTACT----- */
 .contact_us {
     background-color: var(--white);
-}
-.contact_us--logo {
-    background-color: var(--green-secondary);
-    width: 684px;
-    height: 604px;
-}
-.logo_vertical_img {
-    width: 486px;
-    height: 311px;
-    margin: 0 auto;
 }
 
 /* ----- FOOTER ----- */

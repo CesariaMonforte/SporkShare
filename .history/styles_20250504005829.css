@@ -156,31 +156,23 @@ html {
     margin: 0;
     padding: 0;
 }
-.info_box_left {
-    text-align: left;
-}
 
 /* ----- ABOUT US ----- */
-
 .info_box {
     text-align: center;
 }
 .promotional_video {
-    width: 1440px;
+    width: 100%;
     height: 800px;
 }
 /* ----- FEATURES ----- */
 .features {
     background-color: var(--orange-50);
 }
-.features_sub,
-.team,
-.contact_us {
-    padding: 0 var(--space-large);
-}
 
 /* ----- TEAM ----- */
 .team {
+    padding-top: var(--space-large);
     background-color: var(--white);
 }
 
@@ -188,6 +180,7 @@ html {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 16px;
+    margin: 0 auto;
     justify-content: center; /* Center the grid itself if not full width */
     justify-items: center; /* Center items horizontally in each cell */
     align-items: center;
@@ -207,16 +200,6 @@ html {
 /* ----- CONTACT----- */
 .contact_us {
     background-color: var(--white);
-}
-.contact_us--logo {
-    background-color: var(--green-secondary);
-    width: 684px;
-    height: 604px;
-}
-.logo_vertical_img {
-    width: 486px;
-    height: 311px;
-    margin: 0 auto;
 }
 
 /* ----- FOOTER ----- */
