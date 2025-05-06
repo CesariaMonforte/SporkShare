@@ -1,3 +1,4 @@
+/* ------------------------------------------------------ GENERAL STYLES ------------------------------------------------------ */
 html,
 body {
     width: 100%;
@@ -24,6 +25,8 @@ html {
 .main {
     margin-top: var(--space-extra-large);
     margin-bottom: var(--space-extra-large);
+    margin-left: var(--space-large);
+    margin-right: var(--space-large);
 }
 
 .container {
@@ -42,13 +45,13 @@ html {
 .two-column {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: var(--space-large);
+    gap: var(--space-small);
 }
 
 .three-column {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: auto;
+    gap: var(--space-large);
 }
 
 .four-column {
@@ -64,6 +67,11 @@ html {
     grid-template-columns: auto 1fr;
     gap: var(--space-large);
     align-items: center;
+}
+
+.screen_mockup_img {
+    width: 677;
+    height: 821px;
 }
 
 /* ----- BUTTON ----- */
@@ -148,6 +156,111 @@ html {
     color: var(--black);
     margin: 0;
     padding: 0;
+}
+.info_box_left {
+    text-align: left;
+}
+
+/* ----- ABOUT US ----- */
+
+.info_box {
+    text-align: center;
+}
+.promotional_video {
+    width: 1440px;
+    height: 800px;
+}
+/* ----- FEATURES ----- */
+
+.features_sub {
+    background-color: var(--orange-50);
+}
+.features_sub,
+.team,
+.about_us .contact_us {
+    margin-bottom: 90px;
+    display: flex;
+    flex-direction: column;
+}
+
+.features_main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.feature_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 440px;
+    height: 286px;
+}
+
+.feature_item_img {
+    width: 112px;
+    height: 112px;
+}
+
+/* ----- TEAM ----- */
+.team {
+    background-color: var(--white);
+}
+
+.team_list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: var(--space-medium);
+    justify-content: center; /* Center the grid itself if not full width */
+    justify-items: center; /* Center items horizontally in each cell */
+    align-items: center;
+}
+.team_item_background {
+    width: 440px;
+    height: 440px;
+    background-color: var(--green-200);
+    display: flex;
+    justify-content: center;
+    padding: var(--space-medium);
+}
+.team_item_img {
+    width: 390px;
+    height: 369px;
+}
+
+/* ----- CONTACT----- */
+.contact_us {
+    background-color: var(--white);
+}
+.contact_us--logo {
+    background-color: var(--green-secondary);
+    width: 684px;
+    height: 604px;
+    border-radius: var(--space-medium);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo_vertical_img {
+    width: 486px;
+    height: 311px;
+}
+
+.form_input {
+    width: 326px;
+    height: 68px;
+    font-size: var(--space-regular);
+    padding-left: var(--space-regular);
+    margin-bottom: var(--space-regular);
+}
+
+.form_input_long {
+    width: 684px;
+    height: 200px;
+    margin-bottom: var(--space-regular);
+}
+
+.contact_us--form {
+    padding-bottom: var(--space-regular);
 }
 
 /* ----- FOOTER ----- */

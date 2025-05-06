@@ -1,3 +1,4 @@
+/* ------------------------------------------------------ GENERAL STYLES ------------------------------------------------------ */
 html,
 body {
     width: 100%;
@@ -24,6 +25,8 @@ html {
 .main {
     margin-top: var(--space-extra-large);
     margin-bottom: var(--space-extra-large);
+    margin-left: var(--space-large);
+    margin-right: var(--space-large);
 }
 
 .container {
@@ -42,21 +45,8 @@ html {
 .two-column {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: var(--space-large);
-}
-
-.three-column {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: auto;
-}
-
-.four-column {
-    display: grid;
-    grid-template-columns: 0.5fr 1fr 0.5fr 1fr;
-    align-items: center;
-    max-width: 1512px;
-    box-sizing: border-box;
+    gap: var(--space-small);
+    width: 100%;
 }
 
 .two-column-styled {
@@ -64,6 +54,11 @@ html {
     grid-template-columns: auto 1fr;
     gap: var(--space-large);
     align-items: center;
+}
+
+.screen_mockup_img {
+    width: 677;
+    height: 821px;
 }
 
 /* ----- BUTTON ----- */
