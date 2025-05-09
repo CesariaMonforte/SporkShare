@@ -182,7 +182,6 @@ html {
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    color: var(--green-primary);
 }
 
 .button_header:hover {

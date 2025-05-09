@@ -169,6 +169,7 @@ html {
 .button_header {
     background-color: var(--green-secondary);
     font-family: var(--font-family);
+    color: var(--green-secondary);
     font-size: var(--space-regular);
     font-weight: var(--font-style-bold);
     text-align: center;
@@ -182,7 +183,6 @@ html {
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    color: var(--green-primary);
 }
 
 .button_header:hover {
