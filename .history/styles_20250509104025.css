@@ -337,7 +337,6 @@ a:visited {
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    color: var(--green-primary);
 }
 
 .button-features:hover {
@@ -532,7 +531,6 @@ a:visited {
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    color: var(--green-primary);
 }
 
 .button_form:hover {
